@@ -2,11 +2,12 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <section className="body-font text-gray-600">
+    <section className=" text-gray-600">
       <div className="container mx-auto px-5 py-24" bis_skin_checked="1">
         <div className="-m-4 flex flex-wrap" bis_skin_checked="1">
           <div className="p-4 md:w-1/3" bis_skin_checked="1">
             <div
+              // eslint-disable-next-line tailwindcss/migration-from-tailwind-2
               className="h-full overflow-hidden rounded-lg border-2 border-gray-200 border-opacity-60"
               bis_skin_checked="1"
             >
@@ -16,10 +17,10 @@ const Blog = () => {
                 alt="blog"
               />
               <div className="p-6" bis_skin_checked="1">
-                <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-gray-400">
+                <h2 className=" mb-1 text-xs font-medium tracking-widest text-gray-400">
                   CATEGORY
                 </h2>
-                <h1 className="title-font mb-3 text-lg font-medium text-gray-900">
+                <h1 className=" mb-3 text-lg font-medium text-gray-900">
                   The Catalyzer
                 </h1>
                 <p className="mb-3 leading-relaxed">
@@ -33,7 +34,7 @@ const Blog = () => {
                   <a className="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">
                     Learn More
                     <svg
-                      className="ml-2 h-4 w-4"
+                      className="ml-2 size-4"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                       stroke-width="2"
@@ -47,7 +48,7 @@ const Blog = () => {
                   </a>
                   <span className="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-200 py-1 pr-3 text-sm leading-none text-gray-400 md:ml-0 lg:ml-auto">
                     <svg
-                      className="mr-1 h-4 w-4"
+                      className="mr-1 size-4"
                       stroke="currentColor"
                       stroke-width="2"
                       fill="none"
@@ -62,7 +63,7 @@ const Blog = () => {
                   </span>
                   <span clasNames="inline-flex items-center text-sm leading-none text-gray-400">
                     <svg
-                      className="mr-1 h-4 w-4"
+                      className="mr-1 size-4"
                       stroke="currentColor"
                       stroke-width="2"
                       fill="none"
@@ -80,6 +81,7 @@ const Blog = () => {
           </div>
           <div className="p-4 md:w-1/3" bis_skin_checked="1">
             <div
+              // eslint-disable-next-line tailwindcss/migration-from-tailwind-2
               className="h-full overflow-hidden rounded-lg border-2 border-gray-200 border-opacity-60"
               bis_skin_checked="1"
             >
@@ -89,10 +91,10 @@ const Blog = () => {
                 alt="blog"
               />
               <div className="p-6" bis_skin_checked="1">
-                <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-gray-400">
+                <h2 className=" mb-1 text-xs font-medium tracking-widest text-gray-400">
                   CATEGORY
                 </h2>
-                <h1 className="title-font mb-3 text-lg font-medium text-gray-900">
+                <h1 className=" mb-3 text-lg font-medium text-gray-900">
                   The 400 Blows
                 </h1>
                 <p className="mb-3 leading-relaxed">
@@ -106,7 +108,7 @@ const Blog = () => {
                   <a className="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">
                     Learn More
                     <svg
-                      className="ml-2 h-4 w-4"
+                      className="ml-2 size-4"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                       stroke-width="2"
@@ -120,7 +122,7 @@ const Blog = () => {
                   </a>
                   <span className="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-200 py-1 pr-3 text-sm leading-none text-gray-400 md:ml-0 lg:ml-auto">
                     <svg
-                      className="mr-1 h-4 w-4"
+                      className="mr-1 size-4"
                       stroke="currentColor"
                       stroke-width="2"
                       fill="none"
@@ -135,7 +137,7 @@ const Blog = () => {
                   </span>
                   <span className="inline-flex items-center text-sm leading-none text-gray-400">
                     <svg
-                      className="mr-1 h-4 w-4"
+                      className="mr-1 size-4"
                       stroke="currentColor"
                       stroke-width="2"
                       fill="none"
@@ -153,6 +155,7 @@ const Blog = () => {
           </div>
           <div className="p-4 md:w-1/3" bis_skin_checked="1">
             <div
+              // eslint-disable-next-line tailwindcss/migration-from-tailwind-2
               className="h-full overflow-hidden rounded-lg border-2 border-gray-200 border-opacity-60"
               bis_skin_checked="1"
             >
@@ -162,10 +165,10 @@ const Blog = () => {
                 alt="blog"
               />
               <div className="p-6" bis_skin_checked="1">
-                <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-gray-400">
+                <h2 className=" mb-1 text-xs font-medium tracking-widest text-gray-400">
                   CATEGORY
                 </h2>
-                <h1 className="title-font mb-3 text-lg font-medium text-gray-900">
+                <h1 className=" mb-3 text-lg font-medium text-gray-900">
                   Shooting Stars
                 </h1>
                 <p className="mb-3 leading-relaxed">
@@ -179,7 +182,7 @@ const Blog = () => {
                   <a className="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">
                     Learn More
                     <svg
-                      className="ml-2 h-4 w-4"
+                      className="ml-2 size-4"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                       stroke-width="2"
@@ -193,7 +196,7 @@ const Blog = () => {
                   </a>
                   <span className="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-200 py-1 pr-3 text-sm leading-none text-gray-400 md:ml-0 lg:ml-auto">
                     <svg
-                      className="mr-1 h-4 w-4"
+                      className="mr-1 size-4"
                       stroke="currentColor"
                       stroke-width="2"
                       fill="none"
@@ -208,7 +211,7 @@ const Blog = () => {
                   </span>
                   <span className="inline-flex items-center text-sm leading-none text-gray-400">
                     <svg
-                      className="mr-1 h-4 w-4"
+                      className="mr-1 size-4"
                       stroke="currentColor"
                       stroke-width="2"
                       fill="none"
