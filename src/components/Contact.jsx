@@ -23,7 +23,7 @@ const Contact = () => {
           scrolling="no"
           marginHeight={0}
           marginWidth={0}
-          src="https://maps.google.com/maps?width=600&height=400&hl=en&q=toko damai lepo-lepo, kendari&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+          src="https://maps.google.com/maps?width=600&height=400&amp;hl=en&amp;q=toko%20damai%20kota%20lama+(toko%20damai)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         />
         <a href="https://embed-googlemap.com">google maps embed</a>
       </div>

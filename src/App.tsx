@@ -8,7 +8,7 @@ import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
-    <main className="bg-[#3423d4]">
+    <main className="from bg-gradient-to-r from-secondary to-primary">
       <NavbarToko />
       <Hero />
       <Blog />

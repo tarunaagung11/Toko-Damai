@@ -3,8 +3,8 @@ import { Button, Navbar } from "flowbite-react";
 
 const NavbarToko = () => {
   return (
-    <div className="bg-[#3423d4]">
-      <Navbar fluid rounded className="bg-[#3423d4]">
+    <div className=" bg-primary">
+      <Navbar fluid rounded className="bg-white">
         <Navbar.Brand href="./">
           <img
             src="/src/assets/logo-ct.png"
@@ -17,38 +17,42 @@ const NavbarToko = () => {
         </Navbar.Brand>
         <div className="flex md:order-2 ">
           <Button gradientDuoTone="purpleToPink">Login</Button>
-          <Navbar.Toggle className="" />
+          <Navbar.Toggle className="hover:text-black" />
         </div>
         <Navbar.Collapse className=" text-center">
-          <Navbar.Link className=" text-white hover:text-black" href="#" active>
+          <Navbar.Link
+            className=" bg-white text-cyan-700 hover:bg-orange-500 hover:text-black"
+            href="#"
+            active
+          >
             Home
           </Navbar.Link>
           <Navbar.Link
-            className=" text-white hover:bg-orange-500 hover:text-black"
+            className=" text-cyan-700 hover:bg-orange-500 hover:text-black"
             href="#"
           >
             Promo
           </Navbar.Link>
           <Navbar.Link
-            className="text-white hover:bg-orange-500 hover:text-black"
+            className="text-cyan-700 hover:bg-orange-500 hover:text-black"
             href="#"
           >
             Event
           </Navbar.Link>
           <Navbar.Link
-            className="text-white hover:bg-orange-500 hover:text-black"
+            className="text-cyan-700 hover:bg-orange-500 hover:text-black"
             href="#"
           >
             Karir
           </Navbar.Link>
           <Navbar.Link
-            className="text-white hover:bg-orange-500 hover:text-black"
+            className="text-cyan-700 hover:bg-orange-500 hover:text-black"
             href="#"
           >
             Blog
           </Navbar.Link>
           <Navbar.Link
-            className="text-white hover:bg-orange-500 hover:text-black"
+            className="text-cyan-700 hover:bg-orange-500 hover:text-black"
             href="#"
           >
             Tentang Kami
