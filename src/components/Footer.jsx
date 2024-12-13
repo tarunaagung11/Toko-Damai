@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../assets/Logo.png";
 
 const Footer = () => {
   return (
@@ -8,15 +9,8 @@ const Footer = () => {
           className="container mx-auto flex flex-col items-center px-5 py-8 sm:flex-row"
           bis_skin_checked="1"
         >
-          <a className="title-font flex items-center justify-center font-medium text-gray-900 md:justify-start">
-            <img
-              src="/src/assets/logo-ct.png"
-              className="mr-3 h-9 sm:h-9"
-              alt="Toko Damai Logo"
-            />
-            <span className="self-center font-swera text-2xl font-semibold text-primary ">
-              Toko Damai
-            </span>
+          <a className=" flex items-center justify-center font-medium text-gray-900 md:justify-start">
+            <img src={Logo} className="mr-3 h-9 sm:h-9" alt="Toko Damai Logo" />
           </a>
           <p className="mt-4 text-sm text-white sm:ml-4 sm:mt-0 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:pl-4">
             © 2024 Toko Damai —

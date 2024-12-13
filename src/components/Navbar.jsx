@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Navbar } from "flowbite-react";
-import Logo from "../assets/logo-ct.png";
+import Logo from "../assets/Logo.png";
 
 const NavbarToko = () => {
   return (
@@ -8,9 +8,6 @@ const NavbarToko = () => {
       <Navbar fluid rounded className="bg-white">
         <Navbar.Brand href="./">
           <img src={Logo} className="mr-3 h-9 sm:h-9" alt="Toko Damai Logo" />
-          <span className="self-center font-swera text-2xl font-semibold text-primary ">
-            Toko Damai
-          </span>
         </Navbar.Brand>
         <div className="flex md:order-2 ">
           <Button gradientDuoTone="purpleToPink">Login</Button>
