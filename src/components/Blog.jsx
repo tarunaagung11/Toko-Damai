@@ -1,9 +1,13 @@
 import React from "react";
+import Examplepic from "../assets/Hero.jpeg";
 
 const Blog = () => {
   return (
-    <section className=" text-gray-600">
-      <div className="container mx-auto px-5 py-24" bis_skin_checked="1">
+    <section className=" pt-4 text-gray-600">
+      <h1 className="pb-6 text-center text-3xl font-semibold text-white">
+        Blog
+      </h1>
+      <div className="container mx-auto px-5" bis_skin_checked="1">
         <div className="-m-4 flex flex-wrap" bis_skin_checked="1">
           <div className="p-4 md:w-1/3" bis_skin_checked="1">
             <div
@@ -13,17 +17,17 @@ const Blog = () => {
             >
               <img
                 className="w-full object-cover object-center md:h-36 lg:h-48"
-                src="https://dummyimage.com/720x400"
+                src={Examplepic}
                 alt="blog"
               />
               <div className="p-6" bis_skin_checked="1">
-                <h2 className=" mb-1 text-xs font-medium tracking-widest text-gray-400">
+                <h2 className=" mb-1 text-xs font-medium tracking-widest text-white">
                   CATEGORY
                 </h2>
-                <h1 className=" mb-3 text-lg font-medium text-gray-900">
+                <h1 className=" mb-3 text-lg font-medium text-white">
                   The Catalyzer
                 </h1>
-                <p className="mb-3 leading-relaxed">
+                <p className="mb-3 leading-relaxed text-white">
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
                 </p>
@@ -31,7 +35,7 @@ const Blog = () => {
                   className="flex flex-wrap items-center "
                   bis_skin_checked="1"
                 >
-                  <a className="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">
+                  <a className="inline-flex items-center text-white md:mb-2 lg:mb-0">
                     Learn More
                     <svg
                       className="ml-2 size-4"
@@ -46,7 +50,7 @@ const Blog = () => {
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
-                  <span className="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-200 py-1 pr-3 text-sm leading-none text-gray-400 md:ml-0 lg:ml-auto">
+                  <span className="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-200 py-1 pr-3 text-sm leading-none text-white md:ml-0 lg:ml-auto">
                     <svg
                       className="mr-1 size-4"
                       stroke="currentColor"
@@ -61,7 +65,7 @@ const Blog = () => {
                     </svg>
                     1.2K
                   </span>
-                  <span clasNames="inline-flex items-center text-sm leading-none text-gray-400">
+                  <span className="inline-flex items-center text-sm leading-none text-white">
                     <svg
                       className="mr-1 size-4"
                       stroke="currentColor"
@@ -87,17 +91,17 @@ const Blog = () => {
             >
               <img
                 className="w-full object-cover object-center md:h-36 lg:h-48"
-                src="https://dummyimage.com/721x401"
+                src={Examplepic}
                 alt="blog"
               />
               <div className="p-6" bis_skin_checked="1">
-                <h2 className=" mb-1 text-xs font-medium tracking-widest text-gray-400">
+                <h2 className=" mb-1 text-xs font-medium tracking-widest text-white">
                   CATEGORY
                 </h2>
-                <h1 className=" mb-3 text-lg font-medium text-gray-900">
+                <h1 className=" mb-3 text-lg font-medium text-white">
                   The 400 Blows
                 </h1>
-                <p className="mb-3 leading-relaxed">
+                <p className="mb-3 leading-relaxed text-white">
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
                 </p>
@@ -105,7 +109,7 @@ const Blog = () => {
                   className="flex flex-wrap items-center"
                   bis_skin_checked="1"
                 >
-                  <a className="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">
+                  <a className="inline-flex items-center text-white md:mb-2 lg:mb-0">
                     Learn More
                     <svg
                       className="ml-2 size-4"
@@ -120,7 +124,7 @@ const Blog = () => {
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
-                  <span className="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-200 py-1 pr-3 text-sm leading-none text-gray-400 md:ml-0 lg:ml-auto">
+                  <span className="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-200 py-1 pr-3 text-sm leading-none text-white md:ml-0 lg:ml-auto">
                     <svg
                       className="mr-1 size-4"
                       stroke="currentColor"
@@ -135,7 +139,7 @@ const Blog = () => {
                     </svg>
                     1.2K
                   </span>
-                  <span className="inline-flex items-center text-sm leading-none text-gray-400">
+                  <span className="inline-flex items-center text-sm leading-none text-white">
                     <svg
                       className="mr-1 size-4"
                       stroke="currentColor"
@@ -161,17 +165,17 @@ const Blog = () => {
             >
               <img
                 className="w-full object-cover object-center md:h-36 lg:h-48"
-                src="https://dummyimage.com/722x402"
+                src={Examplepic}
                 alt="blog"
               />
               <div className="p-6" bis_skin_checked="1">
-                <h2 className=" mb-1 text-xs font-medium tracking-widest text-gray-400">
+                <h2 className=" mb-1 text-xs font-medium tracking-widest text-white">
                   CATEGORY
                 </h2>
-                <h1 className=" mb-3 text-lg font-medium text-gray-900">
+                <h1 className=" mb-3 text-lg font-medium text-white">
                   Shooting Stars
                 </h1>
-                <p className="mb-3 leading-relaxed">
+                <p className="mb-3 leading-relaxed text-white">
                   Photo booth fam kinfolk cold-pressed sriracha leggings
                   jianbing microdosing tousled waistcoat.
                 </p>
@@ -179,7 +183,7 @@ const Blog = () => {
                   className="flex flex-wrap items-center "
                   bis_skin_checked="1"
                 >
-                  <a className="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">
+                  <a className="inline-flex items-center text-white md:mb-2 lg:mb-0">
                     Learn More
                     <svg
                       className="ml-2 size-4"
@@ -194,7 +198,7 @@ const Blog = () => {
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
                   </a>
-                  <span className="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-200 py-1 pr-3 text-sm leading-none text-gray-400 md:ml-0 lg:ml-auto">
+                  <span className="ml-auto mr-3 inline-flex items-center border-r-2 border-gray-200 py-1 pr-3 text-sm leading-none text-white md:ml-0 lg:ml-auto">
                     <svg
                       className="mr-1 size-4"
                       stroke="currentColor"
@@ -209,7 +213,7 @@ const Blog = () => {
                     </svg>
                     1.2K
                   </span>
-                  <span className="inline-flex items-center text-sm leading-none text-gray-400">
+                  <span className="inline-flex items-center text-sm leading-none text-white">
                     <svg
                       className="mr-1 size-4"
                       stroke="currentColor"

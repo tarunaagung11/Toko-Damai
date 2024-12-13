@@ -1,4 +1,5 @@
 import React from "react";
+import Testimonipic from "../assets/Hero.jpeg";
 
 const Testimoni = () => {
   return (
@@ -11,19 +12,19 @@ const Testimoni = () => {
                 <img
                   alt="testimonial"
                   className="mb-8 inline-block size-20 rounded-full border-2 border-gray-200 bg-gray-100 object-cover object-center"
-                  src="https://dummyimage.com/302x302"
+                  src={Testimonipic}
                 />
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-white">
                   Edison bulb retro cloud bread echo park, helvetica stumptown
                   taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
                   ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
                   adaptogen squid fanny pack vaporware.
                 </p>
                 <span className="mb-4 mt-6 inline-block h-1 w-10 rounded bg-indigo-500"></span>
-                <h2 className=" text-sm font-medium tracking-wider text-gray-900">
+                <h2 className=" text-sm font-medium tracking-wider text-white">
                   HOLDEN CAULFIELD
                 </h2>
-                <p className="text-gray-500">Senior Product Designer</p>
+                <p className="text-gray-300">Senior Product Designer</p>
               </div>
             </div>
             <div className="mb-6 p-4 lg:mb-0 lg:w-1/3" bis_skin_checked="1">
@@ -31,19 +32,19 @@ const Testimoni = () => {
                 <img
                   alt="testimonial"
                   className="mb-8 inline-block size-20 rounded-full border-2 border-gray-200 bg-gray-100 object-cover object-center"
-                  src="https://dummyimage.com/300x300"
+                  src={Testimonipic}
                 />
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-white">
                   Edison bulb retro cloud bread echo park, helvetica stumptown
                   taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
                   ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
                   adaptogen squid fanny pack vaporware.
                 </p>
                 <span className="mb-4 mt-6 inline-block h-1 w-10 rounded bg-indigo-500"></span>
-                <h2 className=" text-sm font-medium tracking-wider text-gray-900">
+                <h2 className=" text-sm font-medium tracking-wider text-white">
                   ALPER KAMU
                 </h2>
-                <p className="text-gray-500">UI Develeoper</p>
+                <p className="text-gray-300">UI Develeoper</p>
               </div>
             </div>
             <div className="p-4 lg:mb-0 lg:w-1/3" bis_skin_checked="1">
@@ -51,19 +52,19 @@ const Testimoni = () => {
                 <img
                   alt="testimonial"
                   className="mb-8 inline-block size-20 rounded-full border-2 border-gray-200 bg-gray-100 object-cover object-center"
-                  src="https://dummyimage.com/305x305"
+                  src={Testimonipic}
                 />
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-white">
                   Edison bulb retro cloud bread echo park, helvetica stumptown
                   taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
                   ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
                   adaptogen squid fanny pack vaporware.
                 </p>
                 <span className="mb-4 mt-6 inline-block h-1 w-10 rounded bg-indigo-500"></span>
-                <h2 className=" text-sm font-medium tracking-wider text-gray-900">
+                <h2 className=" text-sm font-medium tracking-wider text-white">
                   HENRY LETHAM
                 </h2>
-                <p className="text-gray-500">CTO</p>
+                <p className="text-gray-300">CTO</p>
               </div>
             </div>
           </div>

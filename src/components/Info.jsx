@@ -100,7 +100,7 @@ const Info = () => {
             </div>
           </div>
           <button className="mx-auto mt-16 flex rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none">
-            Button
+            Ayo Belanja Sekarang🔥
           </button>
         </div>
       </section>
