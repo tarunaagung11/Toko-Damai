@@ -123,7 +123,7 @@ export function StickyNavbar() {
               <span>Log In</span>
             </Button>
             <Button className=" from-green-400 to-blue-600 hover:bg-gradient-to-tl ">
-              <span>Log In</span>
+              <span>Sign In</span>
             </Button>
           </div>
         </MobileNav>
