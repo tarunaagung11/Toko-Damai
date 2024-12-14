@@ -1,5 +1,6 @@
 import React from "react";
 import Arrow from "../assets/arrow.png";
+import { motion } from "motion/react";
 
 const Info = () => {
   return (
@@ -99,9 +100,13 @@ const Info = () => {
               </div>
             </div>
           </div>
-          <button className="mx-auto mt-16 flex rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none">
+          <motion.button
+            className="mx-auto mt-16 flex rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
             Ayo Belanja Sekarang🔥
-          </button>
+          </motion.button>
         </div>
       </section>
     </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <h1 className=" py-3 text-center text-3xl font-semibold text-white">
+      <h1 className=" py-3 text-center font-roboto text-2xl font-semibold text-white">
         Lokasi Toko Kami
       </h1>
       <div className="mapouter flex gap-2">

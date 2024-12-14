@@ -1,4 +1,4 @@
-import NavbarToko from "./components/Navbar.jsx";
+import StickyNavbar from "./components/StickyNavbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Blog from "./components/Blog.jsx";
 import Contact from "./components/Contact.jsx";
@@ -8,8 +8,8 @@ import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
-    <main className=" bg-gradient-to-r from-secondary to-primary">
-      <NavbarToko />
+    <main>
+      <StickyNavbar />
       <Hero />
       <Blog />
       <Info />
