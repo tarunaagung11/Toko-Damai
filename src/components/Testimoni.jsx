@@ -1,5 +1,7 @@
 import React from "react";
-import Testimonipic from "../assets/Hero.jpeg";
+import Testi1 from "../assets/Testi1.jpg";
+import Testi2 from "../assets/Testi2.jpg";
+import Testi3 from "../assets/Testi3.jpg";
 
 const Testimoni = () => {
   return (
@@ -12,19 +14,20 @@ const Testimoni = () => {
                 <img
                   alt="testimonial"
                   className="mb-8 inline-block size-20 rounded-full border-2 border-gray-200 bg-gray-100 object-cover object-center"
-                  src={Testimonipic}
+                  src={Testi1}
                 />
                 <p className="leading-relaxed text-white">
-                  Edison bulb retro cloud bread echo park, helvetica stumptown
-                  taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
-                  ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
-                  adaptogen squid fanny pack vaporware.
+                  Toko Damai adalah tempat belanja terbaik di Kendari. Produk
+                  lengkap, harga bersaing, dan pelayanan ramah. Saya sering
+                  belanja grosir dan retail di sini, selalu puas dengan kualitas
+                  barang dan kenyamanan berbelanja. Pilihan nomor satu di
+                  Kendari!
                 </p>
                 <span className="mb-4 mt-6 inline-block h-1 w-10 rounded bg-indigo-500"></span>
                 <h2 className=" text-sm font-medium tracking-wider text-white">
-                  HOLDEN CAULFIELD
+                  Rudi Setiawan
                 </h2>
-                <p className="text-gray-300">Senior Product Designer</p>
+                <p className="text-gray-300">Pengusaha</p>
               </div>
             </div>
             <div className="mb-6 p-4 lg:mb-0 lg:w-1/3" bis_skin_checked="1">
@@ -32,19 +35,19 @@ const Testimoni = () => {
                 <img
                   alt="testimonial"
                   className="mb-8 inline-block size-20 rounded-full border-2 border-gray-200 bg-gray-100 object-cover object-center"
-                  src={Testimonipic}
+                  src={Testi2}
                 />
                 <p className="leading-relaxed text-white">
-                  Edison bulb retro cloud bread echo park, helvetica stumptown
-                  taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
-                  ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
-                  adaptogen squid fanny pack vaporware.
+                  Saya selalu berbelanja di Toko Damai karena harga yang
+                  terjangkau dan produk yang berkualitas. Pelayanan cepat dan
+                  ramah, serta toko yang bersih dan teratur. Toko Damai adalah
+                  supermarket yang sangat direkomendasikan di Kendari!
                 </p>
                 <span className="mb-4 mt-6 inline-block h-1 w-10 rounded bg-indigo-500"></span>
                 <h2 className=" text-sm font-medium tracking-wider text-white">
-                  ALPER KAMU
+                  Siti Rahma
                 </h2>
-                <p className="text-gray-300">UI Develeoper</p>
+                <p className="text-gray-300">Ibu Rumah Tangga</p>
               </div>
             </div>
             <div className="p-4 lg:mb-0 lg:w-1/3" bis_skin_checked="1">
@@ -52,19 +55,19 @@ const Testimoni = () => {
                 <img
                   alt="testimonial"
                   className="mb-8 inline-block size-20 rounded-full border-2 border-gray-200 bg-gray-100 object-cover object-center"
-                  src={Testimonipic}
+                  src={Testi3}
                 />
                 <p className="leading-relaxed text-white">
-                  Edison bulb retro cloud bread echo park, helvetica stumptown
-                  taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
-                  ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
-                  adaptogen squid fanny pack vaporware.
+                  Sebagai pelanggan setia, saya selalu memilih Toko Damai untuk
+                  memenuhi kebutuhan rumah tangga. Kualitas barangnya terjamin,
+                  stok lengkap, dan harga bersaing. Toko ini memang pilihan
+                  terbaik untuk berbelanja grosir dan retail di Kendari!
                 </p>
                 <span className="mb-4 mt-6 inline-block h-1 w-10 rounded bg-indigo-500"></span>
                 <h2 className=" text-sm font-medium tracking-wider text-white">
-                  HENRY LETHAM
+                  Andi Prasetya
                 </h2>
-                <p className="text-gray-300">CTO</p>
+                <p className="text-gray-300">Karyawan Swasta</p>
               </div>
             </div>
           </div>

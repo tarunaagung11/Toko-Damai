@@ -1,13 +1,7 @@
 import React from "react";
 import Logo from "../assets/Logo.png";
 import { motion } from "motion/react";
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
+import { Navbar, Button, IconButton, Collapse } from "@material-tailwind/react";
 
 export function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -95,7 +89,7 @@ export function StickyNavbar() {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>
+        <Collapse open={openNav}>
           {
             <ul className=" mb-4 mt-2 flex flex-col gap-2 text-center font-roboto text-black  lg:my-0 lg:flex-row lg:items-center lg:gap-6">
               <li className=" from-green-400 to-blue-600 hover:bg-gradient-to-tl hover:text-white">
@@ -126,7 +120,7 @@ export function StickyNavbar() {
               <span>Sign In</span>
             </Button>
           </div>
-        </MobileNav>
+        </Collapse>
       </Navbar>
     </div>
   );
