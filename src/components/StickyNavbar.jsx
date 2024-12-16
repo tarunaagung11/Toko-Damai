@@ -22,22 +22,22 @@ export function StickyNavbar() {
           <div className="flex items-center gap-8 ">
             <div className="mr-4 hidden lg:block">
               <ul className="mb-4 flex flex-col gap-2 lg:my-0 lg:flex-row lg:items-center lg:gap-12">
-                <li className="text-center text-black">
+                <li className="text-black hover:text-blue-500">
                   <a href="/">Home</a>
                 </li>
-                <li className="">
+                <li className="text-black hover:text-blue-500">
                   <a href="#">Promo</a>
                 </li>
-                <li className="">
+                <li className="text-black hover:text-blue-500">
                   <a href="#">Event</a>
                 </li>
-                <li className="">
+                <li className="text-black hover:text-blue-500">
                   <a href="#">Karir</a>
                 </li>
-                <li className="">
+                <li className="text-black hover:text-blue-500">
                   <a href="#">Blog</a>
                 </li>
-                <li className="">
+                <li className="text-black hover:text-blue-500">
                   <a href="#">Tentang Kami</a>
                 </li>
               </ul>
