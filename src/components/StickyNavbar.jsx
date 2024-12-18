@@ -26,19 +26,19 @@ export function StickyNavbar() {
                   <a href="/">Home</a>
                 </li>
                 <li className="text-black hover:text-blue-500">
-                  <a href="#">Promo</a>
+                  <a href="/promo">Promo</a>
                 </li>
                 <li className="text-black hover:text-blue-500">
-                  <a href="#">Event</a>
+                  <a href="/event">Event</a>
                 </li>
                 <li className="text-black hover:text-blue-500">
-                  <a href="#">Karir</a>
+                  <a href="/karir">Karir</a>
                 </li>
                 <li className="text-black hover:text-blue-500">
-                  <a href="#">Blog</a>
+                  <a href="/blog">Blog</a>
                 </li>
                 <li className="text-black hover:text-blue-500">
-                  <a href="#">Tentang Kami</a>
+                  <a href="/tentangkami">Tentang Kami</a>
                 </li>
               </ul>
             </div>
@@ -113,9 +113,11 @@ export function StickyNavbar() {
             </ul>
           }
           <div className="flex items-center justify-center gap-x-1 font-roboto">
-            <Button className=" from-green-400 to-blue-600 hover:bg-gradient-to-tl ">
-              <span>Log In</span>
-            </Button>
+            <a href="/login">
+              <Button className=" from-green-400 to-blue-600 hover:bg-gradient-to-tl ">
+                <span>Log In</span>
+              </Button>
+            </a>
             <Button className=" from-green-400 to-blue-600 hover:bg-gradient-to-tl ">
               <span>Sign In</span>
             </Button>

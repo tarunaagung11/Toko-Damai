@@ -1,22 +1,25 @@
-import StickyNavbar from "./components/StickyNavbar.jsx";
-import Hero from "./components/Hero.jsx";
-import Blog from "./components/Blog.jsx";
-import Contact from "./components/Contact.jsx";
-import Info from "./components/Info.jsx";
-import Testimoni from "./components/Testimoni.jsx";
-import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import Blog from "./pages/Blog.jsx";
+import Event from "./pages/Event.jsx";
+import Karir from "./pages/Karir.jsx";
+import Promo from "./pages/Promo.jsx";
+import Tentangkami from "./pages/Tentangkami.jsx";
+import Login from "./pages/Login.jsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <main>
-      <StickyNavbar />
-      <Hero />
-      <Blog />
-      <Info />
-      <Testimoni />
-      <Contact />
-      <Footer />
-    </main>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Promo" element={<Promo />} />
+        <Route path="/event" element={<Event />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/Karir" element={<Karir />} />
+        <Route path="/Tentangkami" element={<Tentangkami />} />
+        <Route path="/Login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 

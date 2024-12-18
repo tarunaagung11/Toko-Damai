@@ -3,7 +3,7 @@ import Blog1 from "../assets/Blog1.jpg";
 import Blog2 from "../assets/Blog2.jpg";
 import Blog3 from "../assets/Blog3.jpg";
 
-const Blog = () => {
+const BlogComponent = () => {
   return (
     <section className=" pt-4 text-gray-600">
       <h1 className="pb-6 text-center font-roboto text-3xl font-semibold text-white">
@@ -244,4 +244,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogComponent;
