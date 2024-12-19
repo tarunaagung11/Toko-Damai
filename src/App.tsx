@@ -15,9 +15,9 @@ function App() {
         <Route path="/Promo" element={<Promo />} />
         <Route path="/event" element={<Event />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/Karir" element={<Karir />} />
-        <Route path="/Tentangkami" element={<Tentangkami />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/karir" element={<Karir />} />
+        <Route path="/tentangkami" element={<Tentangkami />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );

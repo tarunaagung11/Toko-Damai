@@ -43,12 +43,11 @@ export function StickyNavbar() {
               </ul>
             </div>
             <div className="flex items-center gap-x-1">
-              <Button className="hidden from-green-400 to-blue-600 hover:bg-gradient-to-tl lg:inline-block">
-                <span>Log In</span>
-              </Button>
-              <Button className="hidden from-green-400 to-blue-600 hover:bg-gradient-to-tl lg:inline-block">
-                <span>Sign in</span>
-              </Button>
+              <a href="/login">
+                <Button className="hidden from-green-400 to-blue-600 hover:bg-gradient-to-tl lg:inline-block">
+                  <span>Log In</span>
+                </Button>
+              </a>
             </div>
             <IconButton
               variant="text"
@@ -118,9 +117,6 @@ export function StickyNavbar() {
                 <span>Log In</span>
               </Button>
             </a>
-            <Button className=" from-green-400 to-blue-600 hover:bg-gradient-to-tl ">
-              <span>Sign In</span>
-            </Button>
           </div>
         </Collapse>
       </Navbar>
