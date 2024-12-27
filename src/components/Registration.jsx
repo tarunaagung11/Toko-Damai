@@ -1,17 +1,30 @@
 import React from "react";
-import { useForm } from "react-hook-form";
 import { FileInput, Label } from "flowbite-react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
 const Registration = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const initialValues = {
+    nama: "",
+    tanggal: "",
+    alamat: "",
+    kontak: "",
+    kategori: "",
+    bukti: "",
+  };
 
-  console.log(watch("example")); // watch input value by passing the name of it
+  const validationSchema = Yup.object().shape({
+    nama: Yup.string().required(),
+    tanggal: Yup.string().required(),
+    alamat: Yup.string().required(),
+    kontak: Yup.string().required(),
+    kategori: Yup.string().required(),
+    bukti: Yup.string().required(),
+  });
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
 
   return (
     <div>
@@ -20,12 +33,12 @@ const Registration = () => {
           <h2 className="mb-4 text-center text-xl font-bold text-gray-900 dark:text-white">
             Registration
           </h2>
-          <form
-            onSubmit={handleSubmit((data) => {
-              console.log(data);
-            })}
+          <Formik
+            initialValues={initialValues}
+            onSubmit={onSubmit}
+            validationSchema={validationSchema}
           >
-            <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
+            <Form className="grid gap-4 sm:grid-cols-2 sm:gap-6">
               <div className="sm:col-span-2">
                 <label
                   htmlFor="Nama"
@@ -33,12 +46,13 @@ const Registration = () => {
                 >
                   Nama
                 </label>
-                <input
+                <ErrorMessage name="nama" />
+                <Field
                   type="text"
-                  {...register("nama", { required: true })}
+                  name="nama"
                   id="nama"
                   className=" block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
-                  placeholder="Name"
+                  placeholder="Nama"
                   required=""
                 />
               </div>
@@ -49,9 +63,9 @@ const Registration = () => {
                 >
                   Tanggal Lahir
                 </label>
-                <input
+                <Field
                   type="date"
-                  {...register("tanggal", { required: true })}
+                  name="tanggal"
                   id="tanggal"
                   className=" block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
                   placeholder="tanggal"
@@ -65,9 +79,9 @@ const Registration = () => {
                 >
                   Alamat
                 </label>
-                <input
+                <Field
                   type="text"
-                  {...register("alamat", { required: true })}
+                  name="alamat"
                   id="alamat"
                   className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
                   placeholder="Alamat"
@@ -81,9 +95,9 @@ const Registration = () => {
                 >
                   Kontak
                 </label>
-                <input
+                <Field
                   type="text"
-                  {...register("kontak", { required: true })}
+                  name="kontak"
                   id="kontak"
                   className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
                   placeholder="Kontak"
@@ -98,7 +112,7 @@ const Registration = () => {
                   Kategori
                 </label>
                 <select
-                  {...register("kategori", { required: true })}
+                  name="kategori"
                   id="kategori"
                   className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
                 >
@@ -151,8 +165,13 @@ const Registration = () => {
                   Submit
                 </button>
               </div>
-            </div>
-          </form>
+              <div className="w-full">
+                <h1 className=" text-center font-semibold">
+                  Keterangan Pembayaran
+                </h1>
+              </div>
+            </Form>
+          </Formik>
         </div>
       </section>
     </div>
