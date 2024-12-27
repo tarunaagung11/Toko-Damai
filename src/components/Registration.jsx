@@ -108,7 +108,7 @@ const Registration = () => {
                 </select>
               </div>
 
-              <div>
+              <div className=" grid justify-center">
                 <h1 className=" m-1 text-center font-semibold">
                   Bukti Pembayaran
                 </h1>
@@ -117,7 +117,7 @@ const Registration = () => {
                     htmlFor="dropzone-file"
                     className="flex h-64 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
                   >
-                    <div className="flex flex-col items-center justify-center pb-6 pt-5">
+                    <div className="flex flex-col items-center justify-center pb-6 pt-5 ">
                       <svg
                         className="mb-4 size-8 text-gray-500 dark:text-gray-400"
                         aria-hidden="true"
@@ -144,14 +144,14 @@ const Registration = () => {
                     <FileInput id="dropzone-file" className="hidden" />
                   </Label>
                 </div>
+                <button
+                  type="submit"
+                  className=" mt-4 inline-flex items-center justify-center rounded-lg bg-blue-400 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-600 focus:ring-4 sm:mt-6"
+                >
+                  Submit
+                </button>
               </div>
             </div>
-            <button
-              type="submit"
-              className=" mt-4 inline-flex items-center rounded-lg bg-blue-400 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-600 focus:ring-4 sm:mt-6"
-            >
-              Submit
-            </button>
           </form>
         </div>
       </section>
