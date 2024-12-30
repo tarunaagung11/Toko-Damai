@@ -7,6 +7,8 @@ import Tentangkami from "./pages/Tentangkami.jsx";
 import Login from "./pages/Login.jsx";
 import Damaihalfmarathon from "./pages/damaihalfmarathon.jsx";
 import Pendaftar from "./pages/pendaftar.jsx";
+import Edit from "./components/Edit.jsx";
+import SuccessMessage from "./pages/SuccessMessage.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/damaihalfmarathon" element={<Damaihalfmarathon />} />
         <Route path="/pendaftar" element={<Pendaftar />} />
+        <Route path="/pendaftar/edit/:id" element={<Edit />} />
+        <Route path="/successmessage" element={<SuccessMessage />} />
       </Routes>
     </Router>
   );

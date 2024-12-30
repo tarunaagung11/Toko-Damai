@@ -1,9 +1,9 @@
 import React from "react";
-
+import Logo from "../assets/Damairun/RUN TAGLINE 2.png";
 const Step = () => {
   return (
     <div>
-      <section className=" bg-white text-gray-600">
+      <section className=" text-gray-600">
         <div
           className="container mx-auto flex flex-wrap px-5 py-24"
           bis_skin_checked="1"
@@ -190,7 +190,7 @@ const Step = () => {
             </div>
             <img
               className="mt-12 rounded-lg object-cover object-center md:mt-0 md:w-1/2 lg:w-3/5"
-              src="https://dummyimage.com/1200x500"
+              src={Logo}
               alt="step"
             />
           </div>
