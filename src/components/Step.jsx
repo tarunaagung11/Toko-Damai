@@ -1,13 +1,20 @@
 import React from "react";
 import Logo from "../assets/Damairun/RUN TAGLINE 2.png";
+import Waveline from "../assets/Damairun/WAVELINE.png";
 const Step = () => {
   return (
     <div>
-      <section className=" text-gray-600">
+      <section
+        className=" text-white"
+        style={{ backgroundImage: `url(${Waveline})` }}
+      >
         <div
-          className="container mx-auto flex flex-wrap px-5 py-24"
+          className="container mx-auto flex flex-wrap px-5 py-10 "
           bis_skin_checked="1"
         >
+          <h1 className=" w-full text-center font-swera text-7xl font-bold">
+            Damai Run
+          </h1>
           <div className="flex w-full flex-wrap" bis_skin_checked="1">
             <div
               className="md:w-1/2 md:py-6 md:pr-10 lg:w-2/5"
@@ -33,14 +40,14 @@ const Step = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="size-5"
+                    className="size-5 "
                     viewBox="0 0 24 24"
                   >
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                   </svg>
                 </div>
                 <div className="grow pl-4" bis_skin_checked="1">
-                  <h2 className=" mb-1 text-sm font-medium tracking-wider text-gray-900">
+                  <h2 className=" mb-1 text-sm font-medium tracking-wider text-white">
                     STEP 1
                   </h2>
                   <p className="leading-relaxed">
@@ -76,7 +83,7 @@ const Step = () => {
                   </svg>
                 </div>
                 <div className="grow pl-4" bis_skin_checked="1">
-                  <h2 className=" mb-1 text-sm font-medium tracking-wider text-gray-900">
+                  <h2 className=" mb-1 text-sm font-medium tracking-wider text-white">
                     STEP 2
                   </h2>
                   <p className="leading-relaxed">
@@ -113,7 +120,7 @@ const Step = () => {
                   </svg>
                 </div>
                 <div className="grow pl-4" bis_skin_checked="1">
-                  <h2 className=" mb-1 text-sm font-medium tracking-wider text-gray-900">
+                  <h2 className=" mb-1 text-sm font-medium tracking-wider text-white">
                     STEP 3
                   </h2>
                   <p className="leading-relaxed">
@@ -150,7 +157,7 @@ const Step = () => {
                   </svg>
                 </div>
                 <div className="grow pl-4" bis_skin_checked="1">
-                  <h2 className=" mb-1 text-sm font-medium tracking-wider text-gray-900">
+                  <h2 className=" mb-1 text-sm font-medium tracking-wider text-white">
                     STEP 4
                   </h2>
                   <p className="leading-relaxed">
@@ -178,7 +185,7 @@ const Step = () => {
                   </svg>
                 </div>
                 <div className="grow pl-4" bis_skin_checked="1">
-                  <h2 className=" mb-1 text-sm font-medium tracking-wider text-gray-900">
+                  <h2 className=" mb-1 text-sm font-medium tracking-wider text-white">
                     FINISH
                   </h2>
                   <p className="leading-relaxed">
@@ -189,7 +196,7 @@ const Step = () => {
               </div>
             </div>
             <img
-              className="mt-12 rounded-lg object-cover object-center md:mt-0 md:w-1/2 lg:w-3/5"
+              className="mt-12 rounded-lg object-cover object-center  md:mt-36 md:h-[310px] md:w-[360px] lg:mt-10 lg:h-[500px] lg:w-[580px] "
               src={Logo}
               alt="step"
             />

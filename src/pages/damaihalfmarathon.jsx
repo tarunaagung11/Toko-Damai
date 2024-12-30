@@ -4,7 +4,7 @@ import React from "react";
 
 const damaihalfmarathon = () => {
   return (
-    <div className="bg-[url('../assets/Damairun/RUN TAGLINE 2.png')]">
+    <div className=" ">
       <Step />
       <Registration />
     </div>

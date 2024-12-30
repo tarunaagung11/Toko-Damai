@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form, Field } from "formik";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 
@@ -40,12 +40,6 @@ const Registration = () => {
       console.log(error);
     }
   };
-
-  const onSubmit = (data) => {
-    console.log(data);
-  };
-
-  const 
 
   return (
     <div>
@@ -157,11 +151,11 @@ const Registration = () => {
                 <div className="flex w-full items-center justify-center">
                   <label
                     htmlFor="dropzone-file"
-                    className="flex h-64 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600 dark:hover:bg-gray-800"
+                    className="flex h-64 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
                   >
                     <div className="flex flex-col items-center justify-center pb-6 pt-5">
                       <svg
-                        className="mb-4 h-8 w-8 text-gray-500 dark:text-gray-400"
+                        className="mb-4 size-8 text-gray-500 dark:text-gray-400"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -204,7 +198,7 @@ const Registration = () => {
                   Keterangan Pembayaran
                 </h1>
                 {preview ? (
-                  <figure className="image is-128x128">
+                  <figure className=" size-[300px] place-self-center">
                     <img src={preview} alt="Preview Image" />
                   </figure>
                 ) : (
