@@ -3,6 +3,7 @@ import axios from "axios";
 import { Formik, Form, Field } from "formik";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
+import Waveline from "../assets/Damairun/WAVELINE.png";
 
 const Registration = () => {
   const [title, setTitle] = useState("");
@@ -35,6 +36,7 @@ const Registration = () => {
           "Content-type": "multipart/form-data",
         },
       });
+
       navigate("/successmessage");
     } catch (error) {
       console.log(error);
@@ -43,9 +45,12 @@ const Registration = () => {
 
   return (
     <div>
-      <section className="bg-white dark:bg-gray-900">
+      <section
+        className=" dark:bg-gray-900"
+        style={{ backgroundImage: `url(${Waveline})` }}
+      >
         <div className="mx-auto max-w-2xl px-4 py-8 lg:py-16">
-          <h2 className="mb-4 text-center text-xl font-bold text-gray-900 dark:text-white">
+          <h2 className="mb-4 text-center text-xl font-bold text-white dark:text-white">
             Registration
           </h2>
           <form onSubmit={saveRegistration}>
@@ -53,7 +58,7 @@ const Registration = () => {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="Nama"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
                 >
                   Nama
                 </label>
@@ -72,7 +77,7 @@ const Registration = () => {
               <div className="w-full">
                 <label
                   htmlFor="tanggal"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
                 >
                   Tanggal Lahir
                 </label>
@@ -89,7 +94,7 @@ const Registration = () => {
               <div className="w-full">
                 <label
                   htmlFor="alamat"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
                 >
                   Alamat
                 </label>
@@ -107,7 +112,7 @@ const Registration = () => {
               <div className="w-full">
                 <label
                   htmlFor="kontak"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
                 >
                   Kontak
                 </label>
@@ -125,7 +130,7 @@ const Registration = () => {
               <div>
                 <label
                   htmlFor="Kategori"
-                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
                 >
                   Kategori
                 </label>
@@ -145,7 +150,7 @@ const Registration = () => {
               </div>
 
               <div className=" grid justify-center">
-                <h1 className=" m-1 text-center font-semibold">
+                <h1 className=" m-1 text-center font-semibold text-white">
                   Bukti Pembayaran
                 </h1>
                 <div className="flex w-full items-center justify-center">
@@ -194,9 +199,6 @@ const Registration = () => {
                 </button>
               </div>
               <div className="w-full">
-                <h1 className=" text-center font-semibold">
-                  Keterangan Pembayaran
-                </h1>
                 {preview ? (
                   <figure className=" size-[300px] place-self-center">
                     <img src={preview} alt="Preview Image" />

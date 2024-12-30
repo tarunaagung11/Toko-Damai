@@ -1,6 +1,8 @@
-import React from "react";
+import { React } from "react";
+import { motion } from "motion/react";
 import Logo from "../assets/Damairun/RUN TAGLINE 2.png";
 import Waveline from "../assets/Damairun/WAVELINE.png";
+
 const Step = () => {
   return (
     <div>
@@ -8,7 +10,14 @@ const Step = () => {
         className=" text-white"
         style={{ backgroundImage: `url(${Waveline})` }}
       >
-        <div
+        <motion.div
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          }}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 1, delay: 0.25 }}
           className="container mx-auto flex flex-wrap px-5 py-10 "
           bis_skin_checked="1"
         >
@@ -195,13 +204,22 @@ const Step = () => {
                 </div>
               </div>
             </div>
-            <img
+            <motion.img
+              variants={{
+                hidden: { opacity: 0.25, x: -200 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              initial="hidden"
+              animate="visible"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, delay: 0.25 }}
               className="mt-12 rounded-lg object-cover object-center  md:mt-36 md:h-[310px] md:w-[360px] lg:mt-10 lg:h-[500px] lg:w-[580px] "
               src={Logo}
               alt="step"
             />
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );
