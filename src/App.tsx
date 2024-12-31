@@ -9,13 +9,15 @@ import Damaihalfmarathon from "./pages/damaihalfmarathon.jsx";
 import Pendaftar from "./pages/pendaftar.jsx";
 import Edit from "./components/Edit.jsx";
 import SuccessMessage from "./pages/SuccessMessage.jsx";
+import ComingSoon from "./pages/Comingsoon.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<ComingSoon />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/Promo" element={<Promo />} />
         <Route path="/event" element={<Event />} />
         <Route path="/blog" element={<Blog />} />

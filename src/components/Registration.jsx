@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Formik, Form, Field } from "formik";
 import { useNavigate } from "react-router-dom";
-import * as Yup from "yup";
+
 import Waveline from "../assets/Damairun/WAVELINE.png";
 
 const Registration = () => {

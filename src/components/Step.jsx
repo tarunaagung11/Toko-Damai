@@ -2,6 +2,7 @@ import { React } from "react";
 import { motion } from "motion/react";
 import Logo from "../assets/Damairun/RUN TAGLINE 2.png";
 import Waveline from "../assets/Damairun/WAVELINE.png";
+import LogoPutih from "../assets/Damairun/LOGO 1 PUTIH.png";
 
 const Step = () => {
   return (
@@ -18,12 +19,11 @@ const Step = () => {
           initial="hidden"
           animate="visible"
           transition={{ duration: 1, delay: 0.25 }}
-          className="container mx-auto flex flex-wrap px-5 py-10 "
+          className="container mx-auto flex flex-wrap justify-center px-5 py-10"
           bis_skin_checked="1"
         >
-          <h1 className=" w-full text-center font-swera text-7xl font-bold">
-            Damai Run
-          </h1>
+          <img src={LogoPutih} className="w-[350px] justify-center pb-6" />
+
           <div className="flex w-full flex-wrap" bis_skin_checked="1">
             <div
               className="md:w-1/2 md:py-6 md:pr-10 lg:w-2/5"
