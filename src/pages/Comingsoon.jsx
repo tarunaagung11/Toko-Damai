@@ -102,7 +102,7 @@ const Comingsoon = () => {
         animate="visible"
         transition={{ duration: 1, delay: 0.25 }}
       >
-        <div className="flex min-h-screen w-full   p-10 md:w-1/2">
+        <div className="flex min-h-screen w-full p-10 md:w-1/2">
           <div className="my-auto w-full text-center">
             <img src={LogoPutih} className="w-[350px] justify-center pb-6" />
             <h6 className=" mb-14 text-4xl font-bold uppercase text-white md:-mr-20 md:text-right md:text-5xl lg:text-6xl">
@@ -113,7 +113,7 @@ const Comingsoon = () => {
             {/* Content */}
             <p className="mb-10 text-base text-gray-200 md:text-right">
               Bergabunglah dalam sejarah! Kami mengundang Anda untuk menjadi
-              bagian dari Damai Half Marathon 2024, lomba lari pertama di
+              bagian dari Damai Half Marathon 2025, lomba lari pertama di
               Sulawesi Tenggara yang menggabungkan semangat olahraga dengan
               keindahan alam lokal.
             </p>
