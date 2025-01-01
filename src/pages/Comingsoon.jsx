@@ -139,7 +139,7 @@ const Comingsoon = () => {
             viewport={{ once: true }}
             transition={{ duration: 1.5, delay: 0.25 }}
             src={Tagline}
-            className="mt-0 flex w-[600px] items-center justify-self-center sm:mt-0 md:mt-0 lg:mt-48 lg:pl-24"
+            className="mt-0 flex w-[550px] items-center justify-self-center sm:mt-0 md:mt-0 lg:mt-48 lg:pl-24"
           />
         </div>
       </motion.div>
