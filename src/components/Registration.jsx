@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Card, Checkbox } from "flowbite-react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -6,10 +7,23 @@ import Waveline from "../assets/Damairun/WAVELINE.png";
 
 const Registration = () => {
   const [title, setTitle] = useState("");
+  const [jenisKelamin, setJenisKelamin] = useState("");
+  const [nik, setNik] = useState("");
+  const [tempatLahir, setTempatLahir] = useState("");
   const [tanggalLahir, setTanggalLahir] = useState("");
   const [alamat, setAlamat] = useState("");
-  const [kontak, setKontak] = useState("");
+  const [email, setEmail] = useState("");
+  const [ukuranJersey, setUkuranJersey] = useState("");
   const [kategori, setKategori] = useState("");
+  const [kontak, setKontak] = useState("");
+  const [kontakDarurat1, setKontakDarurat1] = useState("");
+  const [kontakDarurat2, setKontakDarurat2] = useState("");
+  const [namaBib, setNamaBib] = useState("");
+  const [group, setGroup] = useState("");
+  const [golonganDarah, setGolonganDarah] = useState("");
+  const [pekerjaan, setPerkerjaan] = useState("");
+  const [penyakit, setPenyakit] = useState("");
+  const [info, setInfo] = useState("");
   const [file, setFile] = useState("");
   const [preview, setPreview] = useState("");
   const navigate = useNavigate();
@@ -25,9 +39,22 @@ const Registration = () => {
     const formData = new FormData();
     formData.append("file", file);
     formData.append("title", title);
+    formData.append("jenisKelamin", jenisKelamin);
+    formData.append("nik", nik);
+    formData.append("tempatLahir", tempatLahir);
     formData.append("tanggalLahir", tanggalLahir);
     formData.append("alamat", alamat);
+    formData.append("email", email);
+    formData.append("ukuranJersey", ukuranJersey);
     formData.append("kontak", kontak);
+    formData.append("kontakDarurat1", kontakDarurat1);
+    formData.append("kontakDarurat2", kontakDarurat2);
+    formData.append("namaBib", namaBib);
+    formData.append("group", group);
+    formData.append("golonganDarah", golonganDarah);
+    formData.append("pekerjaan", pekerjaan);
+    formData.append("penyakit", penyakit);
+    formData.append("info", info);
     formData.append("kategori", kategori);
     try {
       await axios.post("http://localhost:5000/registrations", formData, {
@@ -56,20 +83,76 @@ const Registration = () => {
             <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
               <div className="sm:col-span-2">
                 <label
-                  htmlFor="Nama"
+                  htmlFor="Name"
                   className="mb-2 block text-sm font-medium text-white dark:text-white"
                 >
-                  Nama
+                  Nama Lengkap
                 </label>
 
                 <input
                   type="text"
-                  name="nama"
+                  name="name"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
-                  id="nama"
-                  className=" block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
-                  placeholder="Nama"
+                  id="name"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Nama Lengkap"
+                  required=""
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="JenisKelamin"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Jenis Kelamin
+                </label>
+                <select
+                  name="jenisKelamin"
+                  as="select"
+                  value={jenisKelamin}
+                  onChange={(e) => setJenisKelamin(e.target.value)}
+                  id="jenisKelamin"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                >
+                  <option value="Pilih">Pilih Jenis Kelamin</option>
+                  <option value="Laki-laki">Laki-laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select>
+              </div>
+              <div className="w-full">
+                <label
+                  htmlFor="nik"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Nomor Identitas (KTP/SIM/Passport)
+                </label>
+                <input
+                  type="text"
+                  name="nik"
+                  value={nik}
+                  onChange={(e) => setNik(e.target.value)}
+                  id="nik"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Nomor Identitas"
+                  required=""
+                />
+              </div>
+              <div className="w-full">
+                <label
+                  htmlFor="TempatLahir"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Tempat Lahir
+                </label>
+                <input
+                  type="text"
+                  name="tempatLahir"
+                  value={tempatLahir}
+                  onChange={(e) => setTempatLahir(e.target.value)}
+                  id="tempatLahir"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Tempat Lahir"
                   required=""
                 />
               </div>
@@ -95,7 +178,7 @@ const Registration = () => {
                   htmlFor="alamat"
                   className="mb-2 block text-sm font-medium text-white dark:text-white"
                 >
-                  Alamat
+                  Alamat Lengkap
                 </label>
                 <input
                   type="text"
@@ -110,10 +193,28 @@ const Registration = () => {
               </div>
               <div className="w-full">
                 <label
+                  htmlFor="email"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Email
+                </label>
+                <input
+                  type="text"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  id="email"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Email"
+                  required=""
+                />
+              </div>
+              <div className="w-full">
+                <label
                   htmlFor="kontak"
                   className="mb-2 block text-sm font-medium text-white dark:text-white"
                 >
-                  Kontak
+                  Nomor Kontak/Whatsapps
                 </label>
                 <input
                   type="text"
@@ -128,10 +229,35 @@ const Registration = () => {
               </div>
               <div>
                 <label
+                  htmlFor="UkuranJersey"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Ukuran Jersey
+                </label>
+                <select
+                  name="ukuranJersey"
+                  as="select"
+                  value={ukuranJersey}
+                  onChange={(e) => setUkuranJersey(e.target.value)}
+                  id="ukuranJersey"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                >
+                  <option value="Pilih">Pilih Ukuran</option>
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="X">X</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                </select>
+              </div>
+              <div>
+                <label
                   htmlFor="Kategori"
                   className="mb-2 block text-sm font-medium text-white dark:text-white"
                 >
-                  Kategori
+                  Kategori Lomba
                 </label>
                 <select
                   name="kategori"
@@ -147,7 +273,174 @@ const Registration = () => {
                   <option value="HM21K">Half Marathon 21K</option>
                 </select>
               </div>
-
+              <div className="w-full">
+                <label
+                  htmlFor="KontakDarurat1"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Kontak Darurat 1
+                </label>
+                <input
+                  type="text"
+                  name="kontakDarurat1"
+                  value={kontakDarurat1}
+                  onChange={(e) => setKontakDarurat1(e.target.value)}
+                  id="kontakDarurat1"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Kontak Darurat 1"
+                  required=""
+                />
+              </div>
+              <div className="w-full">
+                <label
+                  htmlFor="KontakDarurat2"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Kontak Darurat 2
+                </label>
+                <input
+                  type="text"
+                  name="kontakDarurat2"
+                  value={kontakDarurat2}
+                  onChange={(e) => setKontakDarurat2(e.target.value)}
+                  id="kontakDarurat2"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Kontak Darurat 2"
+                  required=""
+                />
+              </div>
+              <div className="w-full">
+                <label
+                  htmlFor="namaBib"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Nama di Nomor Dada/BIB
+                </label>
+                <input
+                  type="text"
+                  name="namaBib"
+                  value={namaBib}
+                  onChange={(e) => setNamaBib(e.target.value)}
+                  id="namaBib"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Nama di Nomor Dada/BIB"
+                  required=""
+                />
+              </div>
+              <div className="sm:col-span-2">
+                <label
+                  htmlFor="Group"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Group Lari/Komunitas/Instansi (Jika tidak ada isi: - )
+                </label>
+                <input
+                  type="text"
+                  name="group"
+                  value={group}
+                  onChange={(e) => setGroup(e.target.value)}
+                  id="Group"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Group Lari/Komunitas/Instansi"
+                  required=""
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="GolonganDarah"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Golongan Darah
+                </label>
+                <select
+                  name="golonganDarah"
+                  as="select"
+                  value={golonganDarah}
+                  onChange={(e) => setGolonganDarah(e.target.value)}
+                  id="golonganDarah"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                >
+                  <option value="Pilih">Pilih Golongan Darah</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="AB">AB</option>
+                  <option value="O">O</option>
+                </select>
+              </div>
+              <div className="w-full">
+                <label
+                  htmlFor="Pekerjaan"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Pekerjaan
+                </label>
+                <input
+                  type="text"
+                  name="pekerjaan"
+                  value={pekerjaan}
+                  onChange={(e) => setPerkerjaan(e.target.value)}
+                  id="pekerjaan"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Pekerjaan"
+                  required=""
+                />
+              </div>
+              <div className="sm:col-span-2">
+                <label
+                  htmlFor="Penyakit"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Riwayat Penyakit
+                </label>
+                <input
+                  type="text"
+                  name="penyakit"
+                  value={penyakit}
+                  onChange={(e) => setPenyakit(e.target.value)}
+                  id="penyakit"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Riwayat Penyakit"
+                  required=""
+                />
+              </div>
+              <div className="sm:col-span-2">
+                <label
+                  htmlFor="Info"
+                  className="mb-2 block text-sm font-medium text-white dark:text-white"
+                >
+                  Tahu Event ini darimana(Sosmed/Flyer/Keluarga/Teman)
+                </label>
+                <input
+                  type="text"
+                  name="info"
+                  value={info}
+                  onChange={(e) => setInfo(e.target.value)}
+                  id="info"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400"
+                  placeholder="Tahun Event ini darimana"
+                  required=""
+                />
+              </div>
+              <div className="flex items-center gap-2">
+                <Checkbox id="accept" defaultChecked />
+                <label htmlFor="accept" className="flex text-white">
+                  Dengan ini menyatakan&nbsp; dengan sesungguhnya bahwa saya
+                  dalam keadaan sehat dan sanggup untuk mengikuti event Damai
+                  Half Marathon 2025. Apabila di saat kegiatan terjadi sesuatu
+                  yang menimpa diri saya, maka saya maupun keluarga tidak akan
+                  menuntut apapun terhadap panitia penyelenggara.
+                </label>
+              </div>
+              <Card className="max-w-sm">
+                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Pembayaran melalui
+                </h5>
+                <p className="font-semibold text-black">
+                  Bank BCA <br></br>
+                  No. Rek. 791 171 2206 <br></br>
+                  a/n PT ANOA RUNNERS KENDARI
+                </p>
+              </Card>
               <div className=" grid justify-center">
                 <h1 className=" m-1 text-center font-semibold text-white">
                   Bukti Pembayaran
